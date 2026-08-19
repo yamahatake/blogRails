@@ -4,5 +4,5 @@ class Comment < ApplicationRecord
   belongs_to :user, foreign_key: "user_id", class_name: "User"
 
   # Validations
-  validates :content, presence: true
+  validates :content, presence: true, length: { maximum: 255 }
 end
