@@ -1,6 +1,5 @@
 class Role < ApplicationRecord
   # Associations
-  has_many :users, dependent: :nullify
   has_many :permissions, dependent: :destroy
 
   # Validations

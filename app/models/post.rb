@@ -6,5 +6,5 @@ class Post < ApplicationRecord
   # Validations
   validates :title, presence: true, uniqueness: true, length: { minimum: 5, maximum: 100 }
   validates :description, length: { maximum: 255 }, allow_blank: true
-  validates :content, presence: true,
+  validates :content, presence: true
 end

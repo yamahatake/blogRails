@@ -1,0 +1,8 @@
+<header class="navigation-wrapper flex gap-2 w-full justify-between">
+  <nav class="flex gap-2 navigation">
+    <%= link_to "Home", root_path, class: "text-blue-500" %>
+    <%= link_to "Posts", posts_path, class: "text-blue-500" %>
+  </nav>
+  <%= render "components/search" %>
+  <%= render "components/user_profile" %>
+</header>

@@ -24,6 +24,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main class="container mx-auto px-5">
+      <%= render "layouts/navigation"%>
+      <div class="content w-full">
+      <%= yield %>
+      </div>
+      <footer class="footer w-full">
+        <p>© 2026 Blog Rails</p>
+      </footer>
+    </main>
   </body>
 </html>
